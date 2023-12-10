@@ -1,3 +1,9 @@
+@media (max-width: 1920px) {
+    .container {
+        min-height: 88vh;
+    }
+}
+
 @media (max-width:930px) {
     .row {
         margin: 50px 0;

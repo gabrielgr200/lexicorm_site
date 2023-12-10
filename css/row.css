@@ -7,10 +7,14 @@
 }
 
 .cards {
-    background: linear-gradient(to right, #8aaee0,#638ecb);
+    background: linear-gradient(to right, #8aaee0, #638ecb);
     display: flex;
     border-radius: 20px;
     padding: 32px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
 .cards .card {
@@ -22,7 +26,7 @@
     padding: 1rem 1.5rem;
     border-radius: 8px;
     max-height: 468px;
-    margin-left: 32px;
+    margin-left: 20px;
 }
 
 .cards .card:first-child {
