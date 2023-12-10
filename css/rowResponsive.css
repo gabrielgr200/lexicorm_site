@@ -1,0 +1,20 @@
+@media screen and (max-width: 720px) {
+    .container-card {
+        height: 130vh;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .cards .card {
+        padding: 1rem 0;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .cards .card:last-child {
+        margin-bottom: 0;
+    }
+
+}

@@ -1,0 +1,145 @@
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #f0f3fa, #b1c9ef);
+    height: 100vh;
+}
+
+.blog-card {
+    position: absolute;
+    height: 370px;
+    width: 95%;
+    max-width: 850px;
+    margin: auto;
+    background: #f5f5f5;
+    border-radius: 25px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card .inner-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    height: 360px;
+    position: absolute;
+}
+
+.inner-part .img {
+    height: 260px;
+    width: 260px;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 20px;
+    box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+#tap-1:checked ~ .inner-part .img-1,
+#tap-2:checked ~ .inner-part .img-2,
+#tap-3:checked ~ .inner-part .img-3 {
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+.content {
+    padding: 0 20px 0 35px;
+    width: 530px;
+    margin-left: 50px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+#tap-1:checked ~ .inner-part .content-1,
+#tap-2:checked ~ .inner-part .content-2,
+#tap-3:checked ~ .inner-part .content-3 {
+    opacity: 1;
+    margin-left: 0px;
+    z-index: 100;
+    transition-delay: .2s;
+}
+
+.content span {
+    display: block;
+    color: #7b7992;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.content .title {
+    font-size: 23px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content .text {
+    font-size: 19px;
+    color: #4e4a67;
+    margin-bottom: 20px;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sliders {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    z-index: 100;
+    transform: translateX(-50%);
+}
+
+.sliders .tap {
+    position: relative;
+    height: 10px;
+    width: 50px;
+    background: #b1c9ef;
+    border-radius: 5px;
+    display: inline-flex;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.sliders .tap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: -100%;
+    height: 100%;
+    background: #7b7992;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform 0.5s ease-out;
+    transform-origin: left;
+}
+
+#tap-1:checked ~ .sliders .tap-1::before,
+#tap-2:checked ~ .sliders .tap-2::before,
+#tap-3:checked ~ .sliders .tap-3::before {
+    transform: scale(1);
+    width: 100%;
+}
+
+input {
+    display: none;
+}
+
+/* .sliders .tap:hover::before {
+    transform: scale(1);
+    width: 100%;
+} */

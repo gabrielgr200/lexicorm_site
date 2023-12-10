@@ -1,0 +1,156 @@
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #032030;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .footer-container .sec {
+    margin-right: 30px;
+}
+
+footer .footer-container .sec.about {
+    width: 40%;
+}
+
+footer h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #8aaee0;
+}
+
+footer .footer-container .sec.about p {
+    color: #999;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sci {
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sci li .instagram:hover::before {
+    background: #ffa724;
+}
+
+.sci li .instagram:hover {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.sci li .twitter:hover {
+    background: #1da1f2;
+}
+
+.sci li .facebook:hover {
+    background: #1877f2;
+}
+
+.quickLinks {
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks ul li {
+    list-style: none;
+}
+
+.quickLinks ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quickLinks ul li a:hover {
+    color: #fff;
+}
+
+.contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info {
+    position: relative;
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.contact .info li span {
+    font-family: 'Montserrat', sans-serif;
+    color: #999;
+}
+
+.contact .info li a {
+    color: #999;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact .info li a:hover {
+    color: #fff;
+}
+
+.copyrightText {
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+    font-family: 'Montserrat', sans-serif;
+}
