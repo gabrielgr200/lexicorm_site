@@ -99,7 +99,7 @@ header .search {
 }
 
 .searchBox input::placeholder {
-    color: #000;
+    color: #999;
 }
 
 .searchBtn {
