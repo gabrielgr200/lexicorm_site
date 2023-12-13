@@ -1,0 +1,21 @@
+@media screen and (min-width: 1920px) {
+    .container{
+        height: 20vh;
+    }
+    .text{
+        top: 130px;
+    }
+
+    .margin { 
+        height: 100vh;
+        margin-bottom: 200px;
+    }
+
+    .table {
+        width: 96%;
+    }
+
+    .table_section {
+        height: 640px;
+    }
+}

@@ -13,9 +13,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:ital@1&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital@1&family=Poppins:ital,wght@0,100;1,200;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/navResponsive.css">
     <link rel="stylesheet" href="/css/remedios.css">
+    <link rel="stylesheet" href="/css/tabela.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/footerResponsive.css">
+    <link rel="stylesheet" href="/css/tabelaResponsive.css">
     <title>Remédios</title>
 </head>
 
@@ -39,45 +46,104 @@
             <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
         </div>
         <div class="searchBox">
-            <input type='text' placeholder='Pesquise os medicamentos aqui' />
+            <input type='text' placeholder='Pesquise os medicamentos aqui' id='searchInput' />
         </div>
     </header>
 
     <div class="container">
-        <div class="wrapper">
-            <div class="icon">
-                <i id="left" class="fa-solid fa-angle-left arrow"></i>
-            </div>
-
-            <ul class="tabs-box">
-                <li class="tab active">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                <li class="tab">teste</li>
-                
-            </ul>
-
-            <div class="icon">
-                <i id="right" class="fa-solid fa-angle-right arrow"></i>
+        <div class="content">
+            <div class="text">
+                <h3>Aqui você pode pesquisar pelo o medicamento desejado, as informações dos medicamentos
+                    iram aparecer na tabela abaixo.
+                </h3>
             </div>
         </div>
     </div>
+
+    <div class="margin">
+        <div class="table">
+            <div class="table_header">
+                <img src="/img/moebius.svg">
+                <p>Informações dos medicamentos</p>
+            </div>
+
+            <div class="table_section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Referencia</th>
+                            <th>Principio</th>
+                            <th>Comercial</th>
+                            <th>Registro</th>
+                            <th>Colaterais</th>
+                            <th>Decomposto</th>
+                            <th>Farmacia</th>
+                            <th>Concentracao</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="sec about">
+                <h2>About</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem nam odio, ad temporibus magni,
+                    sapiente veritatis eligendi culpa quia error provident consequatur earum. Id quia doloribus
+                    aspernatur est? Voluptatibus, sint!
+                </p>
+                <ul class="sci">
+                    <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="sec quickLinks">
+                <h2>Lexicorm</h2>
+                <ul>
+                    <li><a href="#">teste</a></li>
+                    <li><a href="#">teste</a></li>
+                    <li><a href="#">teste</a></li>
+                    <li><a href="#">teste</a></li>
+                </ul>
+            </div>
+
+            <div class="sec contact">
+                <h2>Contato</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Senac Minas, <br> Divinópolis, BR</span>
+                    </li>
+
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <p><a href="tel:98426-6588">55+ (37)98426-6588</a></p>
+                    </li>
+
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p><a href="mailto:remedioslexicorm@gmail.com">remedioslexicorm@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyrightText">
+        <p>&copy; Copyright 2023 Lexicorm. All Rights Reserved.</p>
+    </div>
+
 
 
     <script src="/js/js.js"></script>

@@ -18,12 +18,12 @@ arrowIcons.forEach(icon => {
     });
 });
 
-allTabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-       tabsBox.querySelector(".active").classList.remove("active");
-       tab.classList.add("active");
-    });
-});
+// allTabs.forEach(tab => {
+//     tab.addEventListener("click", () => {
+//        tabsBox.querySelector(".active").classList.remove("active");
+//        tab.classList.add("active");
+//     });
+// });
 
 const dragging = (e) => {
     if (!isDragging) return;
