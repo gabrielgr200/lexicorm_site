@@ -1,10 +1,10 @@
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1920px) {
     .screen {
-        height: 80vh;
+        height: 60vh;
     }
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     .blog-card {
         height: 370px;
         width: 90%;
@@ -90,4 +90,4 @@
         width: 100px;
     }
     
-}
+} */

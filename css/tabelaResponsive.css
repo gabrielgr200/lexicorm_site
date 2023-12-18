@@ -12,10 +12,15 @@
     }
 
     .table {
+        margin-top: 100px;
         width: 96%;
     }
 
     .table_section {
-        height: 640px;
+        height: 880px;
+    }
+
+    .text {
+        top: 100px;
     }
 }
