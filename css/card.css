@@ -1,140 +1,125 @@
 .screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to top, #f0f3fa, #b1c9ef);
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, #f0f3fa, #b1c9ef);
+  height: 100vh;
+  flex-wrap: wrap;
 }
 
-.blog-card {
-    position: absolute;
-    height: 370px;
-    width: 95%;
-    max-width: 850px;
-    margin: auto;
-    background: #f5f5f5;
-    border-radius: 25px;
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+.cards-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
 }
 
-.blog-card .inner-part {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 25px;
-    height: 360px;
-    position: absolute;
+.cards-container .cards-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 320px;
+  height: 300px;
+  border-radius: 20px;
+  background: #fff;
+  transition: 0.5s ease;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 }
 
-.inner-part .img {
-    height: 260px;
-    width: 260px;
-    overflow: hidden;
-    flex-shrink: 0;
-    border-radius: 20px;
-    box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.1);
+.cards-container .cards-content:hover {
+  height: 400px;
 }
 
-.img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
+.cards-container .cards-content .imgBx {
+  position: absolute;
+  top: 20px;
+  border-radius: 12px;
+  width: 280px;
+  height: 220px;
+  overflow: hidden;
+  transition: 0.5s ease;
 }
 
-#tap-1:checked ~ .inner-part .img-1,
-#tap-2:checked ~ .inner-part .img-2,
-#tap-3:checked ~ .inner-part .img-3 {
-    opacity: 1;
-    transition-delay: .2s;
+.cards-container .cards-content:hover .imgBx {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
 }
 
-.content {
-    padding: 0 20px 0 35px;
-    width: 530px;
-    margin-left: 50px;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
+.cards-container .cards-content .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-#tap-1:checked ~ .inner-part .content-1,
-#tap-2:checked ~ .inner-part .content-2,
-#tap-3:checked ~ .inner-part .content-3 {
-    opacity: 1;
-    margin-left: 0px;
-    z-index: 100;
-    transition-delay: .2s;
+.cards-container .cards-content .content {
+  position: absolute;
+  top: 252px;
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+  padding: 0 30px;
+  text-align: center;
+  transition: 0.5s ease;
 }
 
-.content span {
-    display: block;
-    color: #7b7992;
-    margin-bottom: 15px;
-    font-size: 14px;
-    font-weight: 600;
+.cards-container .cards-content .content .title {
+  color: #000;
+  font-size: 24px;
+  font-family: Afacad;
+  font-weight: 600;
 }
 
-.content .title {
-    font-size: 23px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
+.cards-container .cards-content .content .text {
+  color: #333;
+  font-size: 14px;
+  font-family: Montserrat;
+  padding-bottom: 22px;
+  font-weight: bold;
 }
 
-.content .text {
-    font-size: 19px;
-    color: #4e4a67;
-    margin-bottom: 20px;
-    line-height: 1.3em;
-    text-align: justify;
+.cards-container .cards-content .content a {
+  text-decoration: none;
 }
 
-a {
-    text-decoration: none;
+.cards-container .cards-content .content .button {
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: #f5f5ff;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: width 0.5s ease-in-out;
+  background: linear-gradient(to right, #4682B4, #395886);
 }
 
-.sliders {
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    z-index: 100;
-    transform: translateX(-50%);
+.cards-container .cards-content .content .button img {
+  width: 30px;
+  display: none;
 }
 
-.sliders .tap {
-    position: relative;
-    height: 10px;
-    width: 50px;
-    background: #b1c9ef;
-    border-radius: 5px;
-    display: inline-flex;
-    margin: 0 3px;
-    cursor: pointer;
+.cards-container .cards-content .content .button:hover img {
+  transition: 0.5s ease-in-out;
+  display: block;
 }
 
-.sliders .tap::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: -100%;
-    height: 100%;
-    background: #7b7992;
-    border-radius: 10px;
-    transform: scale(0);
-    transition: transform 0.5s ease-out;
-    transform-origin: left;
+.cards-container .cards-content .content .button:hover {
+  width: 160px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#tap-1:checked ~ .sliders .tap-1::before,
-#tap-2:checked ~ .sliders .tap-2::before,
-#tap-3:checked ~ .sliders .tap-3::before {
-    transform: scale(1);
-    width: 100%;
-}
-
-input {
-    display: none;
+.cards-container .cards-content:hover .content {
+  top: 140px;
+  height: 250px;
 }

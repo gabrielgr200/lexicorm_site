@@ -2,92 +2,30 @@
     .screen {
         height: 60vh;
     }
+
+    .cards-container .cards-content {
+        width: 350px;
+    }
+
+    .cards-container .cards-content .imgBx {
+        width: 300px;
+    }
 }
 
-/* @media screen and (max-width: 900px) {
-    .blog-card {
-        height: 370px;
-        width: 90%;
-        max-width: 943px;
-    }
-    
-}
 
-@media screen and (max-width: 890px) {
-    .blog-card {
-        height: 390px;
-        width: 84%;
-        max-width: 800px;
-    }
-
-    .content {
-        width: 440px;
-    }
-
-    .content .text {
-        margin-bottom: 20px;
-    }
-    
-}
-
-@media screen and (max-width: 880px) {
-    .blog-card {
-        height: 400px;
-        width: 84%;
-        max-width: 800px;
-    }
-
-    .content {
-        width: 400px;
-    }
-
-    .content .text {
-        margin-bottom: 10px;
-    }
-    
-}
-
-@media screen and (max-width: 830px) {
-    .blog-card {
-        height: 440px;
-        width: 84%;
-        max-width: 800px;
-    }
-
-    .content {
-        margin-top: 40px;
-        width: 380px;
-    }
-
-    .content .text {
-        margin-bottom: 20px;
-    }
-    
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1030px) {
     .screen {
-        height: 140vh;
+        height: 160vh;
     }
 
-    .blog-card {
-        height: 800px;
-    }
+    .cards-container {
+        gap: 20px;
+        padding: 50px;
+      }
+}
 
-    .content {
-        width: 600px;
+@media screen and (max-width: 852px) {
+    .screen {
+        height: 200vh;
     }
-
-    .blog-card .inner-part {
-        display: block;
-        height: 400px; 
-        padding: 15px;
-        text-align: center;
-    }
-
-    .inner-part .img {
-        height: 100px;
-        width: 100px;
-    }
-    
-} */
+}
