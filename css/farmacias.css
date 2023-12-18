@@ -68,15 +68,15 @@ body {
     position: absolute;
     transform: translateX(50%, -50%);
     border-radius: 50%;
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .direita {
-    right: 30px; 
+    right: 30px;
 }
 
 .esquerda {
@@ -87,4 +87,48 @@ body {
 .nav-bar ul li a {
     position: relative;
     top: 10px;
+}
+
+@media screen and (max-width: 1030px) {
+    .direita {
+        right: 10px;
+    }
+
+    .esquerda {
+        left: 10px;
+    }
+
+}
+
+@media screen and (max-width: 613px) {
+    .direita {
+        right: 40px;
+    }
+
+    .esquerda {
+        left: 40px;
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+    .direita {
+        right: 6px;
+    }
+
+    .esquerda {
+        left: 6px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .direita {
+        right: 3px;
+    }
+
+    .esquerda {
+        left: 3px;
+    }
+
 }
