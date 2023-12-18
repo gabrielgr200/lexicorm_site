@@ -1,12 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/moebius.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/suporte.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navbarResponsive.css">
+    <link rel="stylesheet" href="/css/suporteResponsive.css">
+    <link rel="stylesheet" href="/css/footerResponsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:ital@1&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital@1&family=Poppins:ital,wght@0,100;1,200;1,300&display=swap"
+        rel="stylesheet">
     <title>Suporte</title>
 </head>
+
 <body>
-    
+    <header>
+        <a href='/' class='logo'><img src="/img/moebius.svg" alt='Logo' /></a>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="/pages/Remedios/remedios.html">Remédios</a></li>
+                <li><a href="/pages/Farmacias/index.html">Farmácias</a></li>
+                <li><a href="/pages/Suporte/index.html">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-form">
+        <h1>Contato</h1>
+        <div class="container">
+            <div class="main">
+                <div class="content">
+                    <h2>Contato</h2>
+                    <form action="https://formsubmit.co/remedioslexicorm@gmail.com" method="POST" class="form">
+                        <input type="text" name="name" id="name" placeholder="Digite o seu nome" required>
+                        <input type="email" name="email" id="email" placeholder="Digite o seu email" required>
+                        <textarea name="message" placeholder="Escreva aqui sua mensagem &#128526;"></textarea>
+                        <button type="submit" class="btn">Enviar <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="form-img">
+                    <img src="/img/contact.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="sec about">
+                <h2>Sobre</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem nam odio, ad temporibus magni,
+                    sapiente veritatis eligendi culpa quia error provident consequatur earum. Id quia doloribus
+                    aspernatur est? Voluptatibus, sint!
+                </p>
+                <ul class="sci">
+                    <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="sec quickLinks">
+                <h2>Lexicorm</h2>
+                <ul>
+                    <li><a href="/pages/Remedios/remedios.html">Remédios</a></li>
+                    <li><a href="/pages/Suporte/index.html">Suporte</a></li>
+                    <li><a href="#">Certificado</a></li>
+                    <li><a href="/pages/Farmacias/index.html">Farmácias</a></li>
+                </ul>
+            </div>
+
+            <div class="sec contact">
+                <h2>Contato</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Minas Gerais <br> Divinópolis, BR</span>
+                    </li>
+
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <p><a href="tel:98426-6588">55+ (37)99446-7070</a></p>
+                    </li>
+
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p><a href="mailto:remedioslexicorm@gmail.com">remedioslexicorm@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyrightText">
+        <p>&copy; Copyright 2023 Lexicorm. All Rights Reserved.</p>
+    </div>
+
+
+    <script src="/js/navbar.js"></script>
+    <script src="https://kit.fontawesome.com/8b3930b39b.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
