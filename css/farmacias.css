@@ -5,130 +5,179 @@
 }
 
 body {
-    background: linear-gradient(to right, #638ecb, #006da4);
+    background: #f0f3fa;
+}
+
+li {
+	list-style: none;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    padding: 20px 20px;
-    align-items: center;
-    height: 130vh;
-}
-
-.card {
-    margin: 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
     width: 100%;
+    min-height: 100vh;
+    place-items: center;
 }
 
-.card-content {
-    padding: 20px;
-    transition: transform 0.5s ease-in-out;
-    display: none;
+.row {
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
 }
 
-.active {
+.row .left {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
 }
 
-#map {
-    height: 400px;
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.row .left .content {
+    padding-left: 20px;
 }
 
-.card-title {
-    padding-top: 10px;
-    font-size: 26px;
-    font-weight: 500;
+.row .left .content .title {
+    font-size: 5vw;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.2em;
+    font-family: Montserrat;
+    color: #8aaee0;
+}
+
+.row .left .content .text {
+    padding-top: 40px;
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: #696969;
     font-family: Afacad;
 }
 
-.card-text {
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 18px;
-    text-align: center;
-}
-
-.direita,
-.esquerda {
-    background-color: #f0f3fa;
+.row .left .content .btn {
+    margin-top: 34px;
+    padding: 20px 20px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
-    font-size: 24px;
-    padding-bottom: 4px;
-    outline: none;
-    position: absolute;
-    transform: translateX(50%, -50%);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+}
+
+.row .left .content .primary {
+    background: #4682B4;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.4s ease-in;
+}
+
+.row .left .content .primary:hover {
+    background: #f0f3fa;
+    color: #4682B4;
+    font-weight: 600;
+    border: 1px solid #4682B4;
+}
+
+.row .right .card {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 492px;
+    height: 440px;
+    background: black;
+    background-image: url('/img/maps.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-list {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 90vh;
+    padding: 1rem;
+    background: #f8f8ff;
 }
 
-.direita {
-    right: 30px;
+.list {
+    max-width: 960px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.esquerda {
-    left: 30px;
+.wrapper {
+    display: flex;
 }
 
-
-.nav-bar ul li a {
-    position: relative;
-    top: 10px;
+.indicator {
+    padding: 1.5rem 0;
+    border-right: 1px solid #eee;
 }
 
-@media screen and (max-width: 1030px) {
-    .direita {
-        right: 10px;
-    }
-
-    .esquerda {
-        left: 10px;
-    }
-
+.indicator li {
+    display: flex;
+    padding: 10px 2rem;
+    align-items: center;
+    grid-gap: .5rem;
+    cursor: pointer;
+    font-size: .875rem;
+    color: #000;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    font-family: Montserrat;
+    text-align: center;
+    border-right: 3px solid transparent;
 }
 
-@media screen and (max-width: 613px) {
-    .direita {
-        right: 40px;
-    }
-
-    .esquerda {
-        left: 40px;
-    }
-
+.indicator li:hover {
+    background: #F3F0FF;
 }
 
-@media screen and (max-width: 610px) {
-    .direita {
-        right: 6px;
-    }
-
-    .esquerda {
-        left: 6px;
-    }
-
+.indicator li i {
+    font-size: 1.3rem;
 }
 
-@media screen and (max-width: 400px) {
-    .direita {
-        right: 3px;
-    }
+.indicator li.active {
+    color: #4682B4;
+    background: #F3F0FF;
+    border-right-color: #4682B4;
+}
 
-    .esquerda {
-        left: 3px;
-    }
+.about {
+    padding: 1.5rem 2rem;
+}
 
+.about li {
+    display: none;
+}
+
+.about li.active {
+    display: block;
+}
+
+.about li h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4682B4;
+    margin-bottom: .75rem;
+}
+
+.about li p {
+    margin-bottom: .5rem;
+    color: #666;
+    font-weight: 600;
+    font-size: .876rem;
+    font-family: Montserrat;
+    line-height: 20px;
+}
+
+#maps {
+    width: 600px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/moebius.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/farmacias.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navbarResponsive.css">
+    <link rel="stylesheet" href="/css/farmaciasResponsive.css">
+    <link rel="stylesheet" href="/css/footerResponsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital@1&family=Poppins:ital,wght@0,100;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:ital@1&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Farmácias</title>
+</head>
+
+<body>
+    <header>
+        <a href='/' class='logo'><img src="/img/moebius.svg" alt='Logo' /></a>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="/pages/Remedios/remedios.html">Remédios</a></li>
+                <li><a href="/pages/Farmacias/index.html">Farmácias</a></li>
+                <li><a href="/pages/Suporte/index.html">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="left">
+                <div class="content">
+                    <h1 class="title">Procure, busque na lexicorm</h1>
+                    <p class="text">Esta com dificuldade em achar farmácias, a lexicorm resolve o problema</p>
+                    <button class="btn primary" onclick="buscarFarmaciasProximas()">Buscar Farmácias</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="card"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-list">
+        <div class="list">
+            <div class="wrapper">
+                <ul class="indicator">
+                    <li class="active" data-target="#question"><i class="ph ph-question"></i> Como funciona?</li>
+                    <li data-target="#maps"><i class="ph ph-map-pin-line"></i> Localização das farmácias</li>
+                    <li data-target="#info"><i class="ph ph-info"></i> Informações do Mapa</li>
+                </ul>
+                <ul class="about">
+                    <li class="active" id="question">
+                        <h1>Como funciona?</h1>
+                        <p>
+                            Nosso sistema de busca por farmácias permite encontrar estabelecimentos. Basta
+                            clicar no botão 'Buscar Farmácias' para visualizar no mapa as farmácias
+                            que estão 3000km de distância da sua localização, além de informações detalhadas sobre cada
+                            uma
+                            delas, como endereço, horário de
+                            funcionamento e avaliações dos usuários. Experimente agora e encontre facilmente as opções
+                            disponíveis ao seu redor.
+                        </p>
+                    </li>
+                    <li id="maps">
+                        <h1>Mapa</h1>
+                        <div id="map"></div>
+                    </li>
+                    <li id="info">
+                        <h1>Informações do Mapa</h1>
+                        <p>
+                            Nosso sistema de busca por farmácias permite encontrar estabelecimentos. Basta
+                            clicar no botão 'Buscar Farmácias' para visualizar no mapa as farmácias
+                            que estão 3000km de distância da sua localização, além de informações detalhadas sobre cada
+                            uma
+                            delas, como endereço, horário de
+                            funcionamento e avaliações dos usuários. Experimente agora e encontre facilmente as opções
+                            disponíveis ao seu redor.
+                        </p>
+                    </li>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="sec about">
+                <h2>Sobre</h2>
+                <p>A Lexicorm é mais do que uma empresa, é uma plataforma dedicada a facilitar o acesso à informação
+                    sobre medicamentos. Nosso site de busca de remédios foi desenvolvido com o compromisso de oferecer
+                    uma experiência simples e eficiente aos usuários, tornando a busca por informações sobre
+                    medicamentos rápida e fácil.
+                </p>
+                <ul class="sci">
+                    <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="sec quickLinks">
+                <h2>Lexicorm</h2>
+                <ul>
+                    <li><a href="/pages/Remedios/remedios.html">Remédios</a></li>
+                    <li><a href="/pages/Suporte/index.html">Suporte</a></li>
+                    <li><a href="#">Certificado</a></li>
+                    <li><a href="/pages/Farmacias/farmacias.html">Farmácias</a></li>
+                </ul>
+            </div>
+
+            <div class="sec contact">
+                <h2>Contato</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Minas Gerais <br> Divinópolis, BR</span>
+                    </li>
+
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <p><a href="tel:98426-6588">55+ (37)99446-7070</a></p>
+                    </li>
+
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p><a href="mailto:remedioslexicorm@gmail.com">remedioslexicorm@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyrightText">
+        <p>&copy; Copyright 2023 Lexicorm. All Rights Reserved.</p>
+    </div>
+
+
+    <script src="/js/navbar.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/buscarFarmacias.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYc4YDV3sh2GbEC-caSPuu1rWemEQ_hk8&callback=initMap" async defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://kit.fontawesome.com/8b3930b39b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

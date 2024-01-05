@@ -38,6 +38,12 @@ function buscarLocalizacao() {
 }
 
 function buscarFarmaciasProximas() {
+    if (!mapa) {
+        // Se o mapa não estiver inicializado, espere um pouco e tente novamente
+        setTimeout(buscarFarmaciasProximas, 100);
+        return;
+    }
+
     var pos = mapa.getCenter();
 
     var request = {
