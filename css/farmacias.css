@@ -143,26 +143,26 @@ li {
     border-right-color: #4682B4;
 }
 
-.about {
+.explains {
     padding: 1.5rem 2rem;
 }
 
-.about li {
+.explains li {
     display: none;
 }
 
-.about li.active {
+.explains li.active {
     display: block;
 }
 
-.about li h1 {
+.explains li h1 {
     font-size: 1.5rem;
     font-weight: 600;
     color: #4682B4;
     margin-bottom: .75rem;
 }
 
-.about li p {
+.explains li p {
     margin-bottom: .5rem;
     color: #666;
     font-weight: 600;

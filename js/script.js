@@ -1,19 +1,19 @@
 const allIndicator = document.querySelectorAll('.indicator li');
-const allAbout = document.querySelectorAll('.about li');
+const allExplains = document.querySelectorAll('.explains li');
 
 allIndicator.forEach(item=> {
   item.addEventListener('click', function () {
-    const about = document.querySelector(this.dataset.target);
+    const explains = document.querySelector(this.dataset.target);
 
     allIndicator.forEach(i=> {
       i.classList.remove('active');
     })
 
-    allAbout.forEach(i=> {
+    allExplains.forEach(i=> {
       i.classList.remove('active');
     })
 
-    about.classList.add('active');
+    explains.classList.add('active');
     this.classList.add('active');
   })
 })

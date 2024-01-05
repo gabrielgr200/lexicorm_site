@@ -72,7 +72,7 @@
                     <li data-target="#maps"><i class="ph ph-map-pin-line"></i> Localização das farmácias</li>
                     <li data-target="#info"><i class="ph ph-info"></i> Informações do Mapa</li>
                 </ul>
-                <ul class="about">
+                <ul class="explains">
                     <li class="active" id="question">
                         <h1>Como funciona?</h1>
                         <p>
@@ -162,7 +162,9 @@
     <script src="/js/navbar.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/buscarFarmacias.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYc4YDV3sh2GbEC-caSPuu1rWemEQ_hk8&callback=initMap" async defer></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYc4YDV3sh2GbEC-caSPuu1rWemEQ_hk8&libraries=places&callback=initMap">
+        </script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="https://kit.fontawesome.com/8b3930b39b.js" crossorigin="anonymous"></script>
 </body>
