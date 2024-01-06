@@ -21,7 +21,7 @@ li {
 
 .row {
     width: 80%;
-    max-width: 1170px;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px 30px;
@@ -44,6 +44,11 @@ li {
     font-family: Montserrat;
     color: #8aaee0;
 }
+
+.row .right .content {
+    padding-left: 20px;
+}
+
 
 .row .left .content .text {
     padding-top: 40px;
