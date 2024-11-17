@@ -31,7 +31,7 @@ menuToggle.onclick = function () {
 function loadMedicines(searchTerm = '') {
     const fetchURL = searchTerm ? `/remedios/search?nome=${searchTerm}` : '/remedios';
 
-    fetch(`https://web-production-38ef.up.railway.app${fetchURL}`)
+    fetch(`https://api-remedios-site.onrender.com${fetchURL}`)
         .then(response => response.json())
         .then(data => {
             const tableBody = document.querySelector('.table_section tbody');
